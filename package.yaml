@@ -53,6 +53,7 @@ dependencies:
 - servant-foreign
 - servant-swagger
 - servant-blaze
+- swagger2
 
 ghc-options:
 - -Wall

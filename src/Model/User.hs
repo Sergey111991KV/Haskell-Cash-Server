@@ -4,6 +4,7 @@ import qualified Data.Text as T
 import qualified Data.Time as Time
 import qualified Data.Aeson as J
 import GHC.Generics (Generic)
+import Data.Swagger ( ToSchema )
 
 data User = User {
   name :: T.Text,
@@ -15,4 +16,6 @@ data User = User {
 instance J.ToJSON User
 
 instance J.FromJSON User
+
+instance ToSchema User
 
