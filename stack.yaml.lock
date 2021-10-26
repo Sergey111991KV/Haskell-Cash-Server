@@ -3,7 +3,35 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: servant-options-0.1.0.0@sha256:39f50166a68006250e79370372f553ca476f14d06d93fa0c401050253aeba803,914
+    pantry-tree:
+      size: 293
+      sha256: 7812baf1b27c62068ba634207fbd7077b886424d666b36739a78c6d4008a1fd4
+  original:
+    hackage: servant-options-0.1.0.0
+- completed:
+    hackage: servant-auth-0.4.0.0@sha256:f913100ce607365e37570d08e8c72e48dce8789950f92f4fd9c689eac8af00c3,2185
+    pantry-tree:
+      size: 332
+      sha256: b08b3042bcec9884ea80098ef0f528be166c5ddcea9651c1fe70b3f584b015c7
+  original:
+    hackage: servant-auth-0.4.0.0
+- completed:
+    hackage: servant-auth-server-0.4.6.0@sha256:dc376c76780259cb8d4850179bb456c3fcd057a97c62e260214b7111b4755a45,5254
+    pantry-tree:
+      size: 1376
+      sha256: 7fad68f290c5933e88bf6ed0da2b4cdcd6b9a43fdf71dea571c0dee0ace51da8
+  original:
+    hackage: servant-auth-server-0.4.6.0
+- completed:
+    hackage: servant-auth-client-0.4.1.0@sha256:61c46fc6cc8f599befd7a21949470a657f99b356d700f9ecec92104833b40957,3437
+    pantry-tree:
+      size: 480
+      sha256: d618e63e1732246b0769cbe4ad4e436ce737ef71b5a58e7dcad7d044d4a69d78
+  original:
+    hackage: servant-auth-client-0.4.1.0
 snapshots:
 - completed:
     size: 586268

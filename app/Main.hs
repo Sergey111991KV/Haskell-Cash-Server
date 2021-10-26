@@ -1,6 +1,10 @@
 module Main where
 
-import Lib
+import Network.Wai.Handler.Warp
+
+import AppServer
+
+
 
 main :: IO ()
-main = someFunc
+main = run 8081 app

@@ -21,6 +21,53 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- mtl
+- bytestring
+- base64-bytestring
+- text
+- time
+- either
+- safe-exceptions
+- random
+- uuid
+- stm
+- async
+
+# Logger
+- monad-logger
+
+
+# Web
+- aeson
+- wai
+- warp
+- http-client
+- http-client-tls
+- http-types
+- servant-client
+- servant-options
+- servant-server
+- servant-auth
+- servant-auth-server
+- servant-auth-client
+- servant-foreign
+- servant-swagger
+- servant-blaze
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Werror=missing-fields
+- -Werror=incomplete-record-updates
+- -Werror=missing-methods
+- -Werror=incomplete-patterns
+- -Wincomplete-uni-patterns
+
+default-extensions:
+- OverloadedStrings
+- DeriveGeneric
+- TypeOperators
+
 
 library:
   source-dirs: src
