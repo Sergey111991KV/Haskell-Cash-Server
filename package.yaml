@@ -32,6 +32,7 @@ dependencies:
 - uuid
 - stm
 - async
+- configurator
 
 # Logger
 - monad-logger
@@ -68,6 +69,7 @@ default-extensions:
 - OverloadedStrings
 - DeriveGeneric
 - TypeOperators
+- ScopedTypeVariables
 
 
 library:

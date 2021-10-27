@@ -27,6 +27,7 @@ library
   exposed-modules:
       API
       AppServer
+      Config
       Model.User
   other-modules:
       Paths_cashing_server
@@ -36,6 +37,7 @@ library
       OverloadedStrings
       DeriveGeneric
       TypeOperators
+      ScopedTypeVariables
   ghc-options: -Wall -Wcompat -Werror=missing-fields -Werror=incomplete-record-updates -Werror=missing-methods -Werror=incomplete-patterns -Wincomplete-uni-patterns
   build-depends:
       aeson
@@ -43,6 +45,7 @@ library
     , base >=4.7 && <5
     , base64-bytestring
     , bytestring
+    , configurator
     , either
     , http-client
     , http-client-tls
@@ -79,6 +82,7 @@ executable cashing-server-exe
       OverloadedStrings
       DeriveGeneric
       TypeOperators
+      ScopedTypeVariables
   ghc-options: -Wall -Wcompat -Werror=missing-fields -Werror=incomplete-record-updates -Werror=missing-methods -Werror=incomplete-patterns -Wincomplete-uni-patterns -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aeson
@@ -87,6 +91,7 @@ executable cashing-server-exe
     , base64-bytestring
     , bytestring
     , cashing-server
+    , configurator
     , either
     , http-client
     , http-client-tls
@@ -124,6 +129,7 @@ test-suite cashing-server-test
       OverloadedStrings
       DeriveGeneric
       TypeOperators
+      ScopedTypeVariables
   ghc-options: -Wall -Wcompat -Werror=missing-fields -Werror=incomplete-record-updates -Werror=missing-methods -Werror=incomplete-patterns -Wincomplete-uni-patterns -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aeson
@@ -132,6 +138,7 @@ test-suite cashing-server-test
     , base64-bytestring
     , bytestring
     , cashing-server
+    , configurator
     , either
     , http-client
     , http-client-tls
