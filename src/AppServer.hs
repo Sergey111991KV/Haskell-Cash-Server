@@ -11,7 +11,6 @@ import Model.User ( User(User) )
 import API ( API, apiType, swagger ) 
 import Config ( Config, retrieveConfig )
 import qualified Data.Configurator as C
-import Control.Monad.IO.Class ( liftIO)
 import qualified Control.Exception as E
 
 

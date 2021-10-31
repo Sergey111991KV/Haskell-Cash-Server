@@ -35,6 +35,7 @@ dependencies:
 - configurator
 
 # Logger
+- co-log
 - monad-logger
 
 
