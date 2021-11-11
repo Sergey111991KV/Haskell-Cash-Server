@@ -37,6 +37,7 @@ dependencies:
 # Logger
 - co-log
 - monad-logger
+- wai-logger
 
 
 # Web

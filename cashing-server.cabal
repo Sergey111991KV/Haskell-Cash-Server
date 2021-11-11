@@ -71,6 +71,7 @@ library
     , time
     , uuid
     , wai
+    , wai-logger
     , warp
   default-language: Haskell2010
 
@@ -118,6 +119,7 @@ executable cashing-server-exe
     , time
     , uuid
     , wai
+    , wai-logger
     , warp
   default-language: Haskell2010
 
@@ -166,5 +168,6 @@ test-suite cashing-server-test
     , time
     , uuid
     , wai
+    , wai-logger
     , warp
   default-language: Haskell2010

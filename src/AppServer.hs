@@ -5,7 +5,9 @@ module AppServer where
 
 import Servant ( Server, Application, type (:<|>)((:<|>)), serve )
 import Data.Time ( UTCTime, defaultTimeLocale, parseTimeOrError )
-import Network.Wai.Handler.Warp ( run )
+import Network.Wai.Handler.Warp
+    ( setLogger, setPort, runSettings, defaultSettings ) 
+import Network.Wai.Logger ( withStdoutLogger )
 
 import Model.User ( User(User) )
 import API ( API, apiType, swagger ) 
@@ -41,5 +43,7 @@ runApp  = do
             case portE of
                 Left err -> print err
                 Right port -> do
-                    run port app
+                    withStdoutLogger $ \aplogger -> do
+                        let settings = setPort port $ setLogger aplogger defaultSettings
+                        runSettings settings app
 
