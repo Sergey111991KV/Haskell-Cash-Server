@@ -9,7 +9,7 @@ Ok, this server will be get data from another internet servers, with any data an
 Ok, before started I must have rules and instruments. Main task - create tasks and estimate their execution time.
 Many instruments for their and for start I choose jira.
 
-First tasks - 
+First tasks:
         - add Servant (with Swagger)
         - all need monads (Logger, Throw and ets...)
         - database (Postgres)
@@ -19,3 +19,12 @@ First tasks -
         - add tests (full tests)
         - add education pages (tests for it)
         - change my other repo with rules programming
+
+Done tasks:
+        - add Servant (with Swagger)
+        - config and environment (what libs and other)
+
+Tests Servant 3 strategies: 
+        - servant-client
+        - hspec-wai
+        - servant-quickcheck

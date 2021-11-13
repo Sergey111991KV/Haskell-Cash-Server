@@ -49,6 +49,8 @@ library
     , co-log
     , configurator
     , either
+    , hspec
+    , hspec-wai
     , http-client
     , http-client-tls
     , http-types
@@ -97,6 +99,8 @@ executable cashing-server-exe
     , co-log
     , configurator
     , either
+    , hspec
+    , hspec-wai
     , http-client
     , http-client-tls
     , http-types
@@ -146,6 +150,8 @@ test-suite cashing-server-test
     , co-log
     , configurator
     , either
+    , hspec
+    , hspec-wai
     , http-client
     , http-client-tls
     , http-types

@@ -58,6 +58,10 @@ dependencies:
 - servant-blaze
 - swagger2
 
+# Tests
+- hspec
+- hspec-wai
+
 ghc-options:
 - -Wall
 - -Wcompat
